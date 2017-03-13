@@ -17,12 +17,15 @@ public class Main {
             different units.
          */
         // todo: convert something
+        Converter.convert(555, Unit.CENTIMETER,Unit.MILE);
 
 
         // todo: convert something else
+        Converter.convert(998001,Unit.METER,Unit.FOOT);
 
 
         // todo: convert yet another thing
+        Converter.convert(5.289,Unit.INCH,Unit.MILLIMETER);
 
 
     }

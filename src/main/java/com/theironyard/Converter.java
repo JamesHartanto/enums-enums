@@ -4,6 +4,7 @@ package com.theironyard;
  * Create a class named Converter. This class will have one static method that
  * will convert a length in one unit to the equivalent value in another unit.
  */
+public class Converter {
 
     /**
      * Create a static method named `convert`. This method will accept the
@@ -21,6 +22,7 @@ package com.theironyard;
      * @return the converted length
      */
     // todo: create convert method
+    public static double convert(double length, Unit from, Unit to) {
 
         /*
             Since any unit knows how long it is in millimeters, we can use
@@ -31,8 +33,12 @@ package com.theironyard;
             mile.
          */
         // todo: create a variable and set it to length times the number of millimeters in the unit
+        double variable = length * from.toMillimeters();
 
 
-        // todo: return the result of dividing the length in millimeters by the number of millimeters in the unit we're convering to
+        // todo: return the result of dividing the length in millimeters by the number of millimeters in the unit we're converting to
+        return variable / to.toMillimeters();
+    }
 
 
+}
